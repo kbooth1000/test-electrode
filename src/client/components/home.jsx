@@ -14,17 +14,17 @@
  *
  */
 
-import React from "react";
-import { connect } from "react-redux";
-import "../styles/raleway.css";
-import custom from "../styles/custom.css"; // eslint-disable-line no-unused-vars
-import electrodePng from "../images/electrode.png";
-import DemoStates from "./demo-states";
-import DemoPureStates from "./demo-pure-states";
-import { DemoButtons } from "./demo-buttons";
-import { Nav } from "./nav";
+import React from 'react';
+import { connect } from 'react-redux';
+import '../styles/raleway.css';
+import custom from '../styles/custom.css'; // eslint-disable-line no-unused-vars
+import electrodePng from '../images/electrode.png';
+import DemoStates from './demo-states';
+import DemoPureStates from './demo-pure-states';
+import { DemoButtons } from './demo-buttons';
+import { Nav } from './nav';
 //
-import Notifications from "react-notify-toast";
+import Notifications from 'react-notify-toast';
 //
 
 class Home extends React.Component {
@@ -34,32 +34,32 @@ class Home extends React.Component {
 
   render() {
     return (
-      <div styleName={"custom.container"}>
+      <div styleName={'custom.container'}>
         <Nav {...this.props} />
 
         {/**/}
         <Notifications />
         {/**/}
 
-        <section styleName={"custom.header"}>
+        <section styleName={'custom.header'}>
           <h2>
-            <span>Hi from </span>
+            <span>Hey from </span>
             <a href="https://github.com/electrode-io">
-              {"Electrode"}
+              {'Electrode'}
               <img src={electrodePng} />
             </a>
           </h2>
         </section>
 
-        <div styleName={"custom.docs-section"}>
+        <div styleName={'custom.docs-section'}>
           <DemoStates />
         </div>
 
-        <div styleName={"custom.docs-section"}>
+        <div styleName={'custom.docs-section'}>
           <DemoPureStates />
         </div>
 
-        <div styleName={"custom.docs-section"}>
+        <div styleName={'custom.docs-section'}>
           <DemoButtons />
         </div>
       </div>
